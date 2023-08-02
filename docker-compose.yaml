@@ -1,0 +1,14 @@
+version: '3'
+services:
+  dev:
+    image: bootcamp:latest
+    build:
+      context: .
+      dockerfile: .Dockerfile
+    volumes:
+      - ./source_code:/root/code
+      - ./vscode-sever:/root/.vscode-server
+    
+      # - ./projects/:/root/projects
+      # - ./.vscode-server/python:/root/.vscode-server
+      
